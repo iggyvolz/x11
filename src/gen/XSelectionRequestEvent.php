@@ -1,0 +1,58 @@
+<?php
+
+declare(strict_types=1);
+
+namespace iggyvolz\x11\gen;
+
+class XSelectionRequestEvent extends XSelectionRequestEventConst
+{
+    public function setType(int $value)
+    {
+        $this->cdata->type = $value;
+    }
+
+    public function setSerial(int $value)
+    {
+        $this->cdata->serial = $value;
+    }
+
+    public function setSendEvent(bool $value)
+    {
+        $this->cdata->send_event = $value === 1;
+    }
+
+    public function setDisplay(null|DisplayPtr $value)
+    {
+        $this->cdata->display = $value?->cdata;
+    }
+
+    public function setOwner(int $value)
+    {
+        $this->cdata->owner = $value;
+    }
+
+    public function setRequestor(int $value)
+    {
+        $this->cdata->requestor = $value;
+    }
+
+    public function setSelection(int $value)
+    {
+        $this->cdata->selection = $value;
+    }
+
+    public function setTarget(int $value)
+    {
+        $this->cdata->target = $value;
+    }
+
+    public function setProperty(int $value)
+    {
+        $this->cdata->property = $value;
+    }
+
+    public function setTime(int $value)
+    {
+        $this->cdata->time = $value;
+    }
+}

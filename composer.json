@@ -1,0 +1,16 @@
+{
+  "name": "iggyvolz/x11",
+  "license": "0BSD",
+  "require": {
+    "php": "^8.2",
+    "ext-ffi": "*"
+  },
+  "require-dev": {
+    "nette/php-generator": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "iggyvolz\\x11\\": "src/"
+    }
+  }
+}
